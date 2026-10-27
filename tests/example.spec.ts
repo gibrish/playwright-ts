@@ -13,5 +13,6 @@ test.describe('navigation', () => {
   test('main navigation 1', async ({ page }) => {
     // Assertions use the expect API.
     await expect(page).toHaveURL('https://playwright.dev/');
+    await expect(page).toHaveTitle(/Playwright/);
   });
 });
